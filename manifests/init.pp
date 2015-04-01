@@ -2,7 +2,7 @@ class ssh_config {
 
 	$ssh_keys = hiera_hash('accounts::ssh_keyse', {})
 
-	if $ssh_keys.keys.length == 0 {
+	if count(keys($ssh_keys)) == 0 {
 		$password_auth = 'yes'
 	} else {
 		$password_auth = 'no'

@@ -10,6 +10,7 @@ mod "puppetlabs/concat", "1.2.0"
 # dep: puppetlabs/concat
 mod "saz/ssh", "2.5.0"
 
+# dep: puppetlabs/stdlib
 # dep: saz/ssh
 mod "weyforth/ssh_config",
 	git: "https://bitbucket.org/weyforth/puppet-ssh_config",

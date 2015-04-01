@@ -11,6 +11,7 @@ class ssh_config {
 	class { 'ssh':
 		server_options => {
 			'PasswordAuthentication' => $password_auth,
+			'LoginGraceTime' => 30,
 			'Match Group ftpusers' => {
 				'ChrootDirectory' => '%h',
 				'ForceCommand' => 'internal-sftp',

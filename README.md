@@ -13,6 +13,6 @@ mod "saz/ssh", "2.5.0"
 # dep: puppetlabs/stdlib
 # dep: saz/ssh
 mod "weyforth/ssh_config",
-	git: "https://bitbucket.org/weyforth/puppet-ssh_config",
+	git: "https://github.com/weyforth/puppet-ssh_config.git",
 	ref: "master"
 ```

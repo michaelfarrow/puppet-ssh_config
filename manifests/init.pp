@@ -20,6 +20,11 @@ class ssh_config {
 				'X11Forwarding' => 'no',
 			},
 		},
+		client_options => {
+			'StrictHostKeyChecking' => 'no', 
+			'UserKnownHostsFile' => '/dev/null',
+			'LogLevel' => 'QUIET',
+		}
 	}
 
 }

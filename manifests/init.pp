@@ -12,6 +12,7 @@ class ssh_config {
 		server_options => {
 			'PasswordAuthentication' => $password_auth,
 			'LoginGraceTime' => 30,
+			'AllowAgentForwarding' => 'yes',
 			'Match Group ftpusers' => {
 				'ChrootDirectory' => '%h',
 				'ForceCommand' => 'internal-sftp',
